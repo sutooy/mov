@@ -169,6 +169,7 @@ useEffect( () => {
               position:'right'
             }
           }}
+          data-testid="Bar"
         />
       </div>
       {/* ====bar Chart Data end=== */}
