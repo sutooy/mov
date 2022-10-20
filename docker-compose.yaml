@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  movus:
+  # ambil dir file react
+    build: ./movus_test
+    # kasih nama utk containernya
+    container_name: movus_test
+    # port yg digunakan
+    ports:
+      - '3000:3000'
+    command: npm start
+
+    # start the container in interactive mode
+    stdin_open: true
+    tty: true
+
+    # kalau sdh, di terminal -> docker-compose up --build
